@@ -2,9 +2,10 @@
 %define	pdir	Text
 %define	pnam	SimpleTemplate
 Summary:	Text::SimpleTemplate - Yet another module for template processing
+Summary(pl):	Text::SimpleTemplate - jeszcze jeden modu³ do przetwarzania szablonów
 Name:		perl-Text-SimpleTemplate
 Version:	0.36
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -14,6 +15,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This is yet another library for template-based text generation.
+
+%description -l pl
+To jest jeszcze jedna biblioteka do bazuj±cego na szablonach
+generowania tekstu.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -27,13 +32,11 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf README.TXT
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README.TXT
 %{perl_sitelib}/Text/SimpleTemplate.pm
 %{_mandir}/man3/*
