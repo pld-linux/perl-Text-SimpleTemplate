@@ -5,11 +5,11 @@ Summary:	Text::SimpleTemplate - Yet another module for template processing
 Summary(pl):	Text::SimpleTemplate - jeszcze jeden modu³ do przetwarzania szablonów
 Name:		perl-Text-SimpleTemplate
 Version:	0.36
-Release:	3
+Release:	4
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -24,7 +24,8 @@ generowania tekstu.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %install
@@ -38,5 +39,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README.TXT
-%{perl_sitelib}/Text/SimpleTemplate.pm
+%{perl_vendorlib}/Text/SimpleTemplate.pm
 %{_mandir}/man3/*
