@@ -5,7 +5,7 @@ Summary:	Text::SimpleTemplate - Yet another module for template processing
 Summary(pl):	Text::SimpleTemplate - jeszcze jeden modu³ do przetwarzania szablonów
 Name:		perl-Text-SimpleTemplate
 Version:	0.36
-Release:	3
+Release:	4
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
