@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Text
 %define	pnam	SimpleTemplate
-Summary:	Text-SimpleTemplate perl module
-Summary(pl):	Modu³ perla Text-SimpleTemplate
+Summary:	Text::SimpleTemplate perl module
+Summary(pl):	Modu³ perla Text::SimpleTemplate
 Name:		perl-Text-SimpleTemplate
 Version:	0.36
 Release:	1
@@ -14,10 +14,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Text-SimpleTemplate perl module.
+Text::SimpleTemplate perl module.
 
 %description -l pl
-Modu³ perla Text-SimpleTemplate.
+Modu³ perla Text::SimpleTemplate.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
