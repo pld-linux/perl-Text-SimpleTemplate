@@ -6,7 +6,7 @@
 %define		pdir	Text
 %define		pnam	SimpleTemplate
 Summary:	Text::SimpleTemplate - yet another module for template processing
-Summary(pl):	Text::SimpleTemplate - jeszcze jeden modu³ do przetwarzania szablonów
+Summary(pl.UTF-8):   Text::SimpleTemplate - jeszcze jeden moduÅ‚ do przetwarzania szablonÃ³w
 Name:		perl-Text-SimpleTemplate
 Version:	0.36
 Release:	5
@@ -21,8 +21,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This is yet another library for template-based text generation.
 
-%description -l pl
-To jest jeszcze jedna biblioteka do bazuj±cego na szablonach
+%description -l pl.UTF-8
+To jest jeszcze jedna biblioteka do bazujÄ…cego na szablonach
 generowania tekstu.
 
 %prep
