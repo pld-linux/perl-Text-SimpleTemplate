@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Text
 %define		pnam	SimpleTemplate
+%include	/usr/lib/rpm/macros.perl
 Summary:	Text::SimpleTemplate - yet another module for template processing
 Summary(pl.UTF-8):	Text::SimpleTemplate - jeszcze jeden moduł do przetwarzania szablonów
 Name:		perl-Text-SimpleTemplate
@@ -14,6 +14,7 @@ License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	a2f05921270b96d8e8d21b263f22e3cc
+URL:		http://search.cpan.org/dist/Text-SimpleTemplate/
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
