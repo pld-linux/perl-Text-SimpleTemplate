@@ -4,7 +4,6 @@
 
 %define		pdir	Text
 %define		pnam	SimpleTemplate
-%include	/usr/lib/rpm/macros.perl
 Summary:	Text::SimpleTemplate - yet another module for template processing
 Summary(pl.UTF-8):	Text::SimpleTemplate - jeszcze jeden moduł do przetwarzania szablonów
 Name:		perl-Text-SimpleTemplate
